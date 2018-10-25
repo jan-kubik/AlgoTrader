@@ -5,16 +5,22 @@ import java.math.BigDecimal;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @XmlRootElement
 public class SymbolDetails {
 
 	String pair;
+	@JsonProperty("price_precision") 
 	int pricePrecision;
+	@JsonProperty("initial_margin") 
 	BigDecimal initialMargin;
+	@JsonProperty("minimum_margin")
 	BigDecimal minimumMargin;
+	@JsonProperty("maximum_order_size")
 	BigDecimal maximumOrderSize;
+	@JsonProperty("minimum_order_size")
 	BigDecimal minimumOrderSize;
 	String expiration;
 	boolean margin;
@@ -67,7 +73,7 @@ public class SymbolDetails {
 		this.margin = margin;
 	}
 	public String myToString() {
-		return "{" + pair + "," + pricePrecision + "," + minimumOrderSize + "," + maximumOrderSize + "}";
+		return "{" + pair + "," + pricePrecision + "," + maximumOrderSize + "," + minimumOrderSize + "}";
 		
 	}
 	
