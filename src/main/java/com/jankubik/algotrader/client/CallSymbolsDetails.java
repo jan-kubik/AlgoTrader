@@ -1,4 +1,4 @@
-package com.jankubik.algoTraderTest.client;
+package com.jankubik.algotrader.client;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.client.HttpStatusCodeException;
 import org.springframework.web.client.RestTemplate;
 
-import com.jankubik.algoTraderTest.model.SymbolDetails;
+import com.jankubik.algotrader.model.SymbolDetails;
 
 @Component
 public class CallSymbolsDetails implements SymbolDetailsInterface {

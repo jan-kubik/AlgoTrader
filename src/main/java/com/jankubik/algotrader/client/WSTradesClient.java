@@ -1,4 +1,4 @@
-package com.jankubik.algoTraderTest.client;
+package com.jankubik.algotrader.client;
 
 import java.net.URI;
 import java.util.Arrays;
@@ -10,7 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import com.jankubik.algoTraderTest.AlgoTraderTestApplication;
+import com.jankubik.algotrader.AlgoTraderTestApplication;
 
 @Component
 @ClientEndpoint

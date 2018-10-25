@@ -1,4 +1,4 @@
-package com.jankubik.algoTraderTest.client;
+package com.jankubik.algotrader.client;
 
 import org.springframework.stereotype.Component;
 
